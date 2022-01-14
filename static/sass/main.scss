@@ -5,8 +5,38 @@
 @import 'colors.scss';
 
 /*WSPÓLNE KLASY*/
-
 body {
     font-family: 'Nunito', sans-serif;
+    background-color: #20bf55;
+    background-color: #7ee8fa;
+    background-image: linear-gradient(315deg, #7ee8fa 0%, #80ff72 74%);
 }
 
+/*NAWIGACJA*/
+.navbar {
+    background-color: $white_color;
+
+    img {
+        height: 70px;
+    }
+
+    a {
+        text-transform: uppercase;
+        color: $black_color;
+    }
+
+    .fa-bars {
+        padding: 10px;
+        font-size: 30px;
+    }
+}
+
+/*MEDIA QUERIES*/
+@media(min-width: 375px) {
+    /*NAWIGACJA*/
+    .navbar {
+        img {
+            height: 80px;
+        };
+    }
+}
