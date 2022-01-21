@@ -7,22 +7,37 @@
 /*WSPÓLNE KLASY*/
 body {
     font-family: 'Nunito', sans-serif;
+}
+
+.gradient {
     background-color: #20bf55;
     background-color: #7ee8fa;
     background-image: linear-gradient(315deg, #7ee8fa 0%, #80ff72 74%);
 }
 
+h2 {
+    text-align: center;
+    text-transform: uppercase;
+}
+
 /*NAWIGACJA*/
 .navbar {
     background-color: $white_color;
+    z-index: 10;
+    box-shadow: 3px 1px 10px grey;
 
     img {
-        height: 70px;
+        height: 60px;
     }
 
     a {
         text-transform: uppercase;
         color: $black_color;
+        transition: color .4s;
+    }
+
+    a:hover {
+        color: $main_color;
     }
 
     .fa-bars {
@@ -31,12 +46,139 @@ body {
     }
 }
 
+/*HEADER*/
+.header {
+    .header-img {
+        position: relative;
+        height: 300px;
+        background-image: url('../img/header/header_small.jpeg');
+        background-position: center;
+        background-size: cover;
+    }
+
+    .shadow {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, .4);
+
+        i {
+            position: absolute;
+            bottom: 5px;
+            font-size: 40px;
+            color: $main_color;
+            left: 50%;
+            transform: translateX(-50%);
+            transition: color .4s;
+        }
+
+        i:hover {
+            color: $second_color;
+        }
+    }
+
+    .header-text {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%);
+        color: $white_color;
+
+        h1 {
+            font-weight: bold;
+            text-shadow: 2px 4px $black_color;
+
+            span {
+                color: $main_color;
+                transition: color .4s;
+                cursor: pointer;
+            }
+
+            span:hover {
+                color: $second_color;
+            }
+        }
+    }
+}
+
+/*O NAS*/
+.about-us {
+    img {
+        border-radius: 10px;
+        width: 200px;
+    }
+}
+
+
+
 /*MEDIA QUERIES*/
 @media(min-width: 375px) {
+
     /*NAWIGACJA*/
     .navbar {
         img {
             height: 80px;
-        };
+        }
+    }
+
+    /*HEADER*/ 
+    .header {
+        .header-img {
+            height: 400px;
+        }
+    }
+
+    /*O NAS*/
+    .about-us {
+        img {
+            width: 340px;
+        }
+    }
+}
+
+@media(min-width: 576px) {
+    /*HEADER*/ 
+    .header {
+        .header-img {
+            height: 500px;
+        }
+    }
+
+    /*O NAS*/
+    .about-us {
+        img {
+            width: 500px;
+        }
+    }
+}
+
+@media(min-width: 768px) {
+    /*HEADER*/ 
+    .header {
+        .header-img {
+            background-image: url('../img/header/header_big.jpeg');
+
+            .header-text {
+                h1 {
+                    font-size: 50px;
+                }
+            }
+        }
+    }
+
+    /*O NAS*/
+    .about-us {
+        img {
+            width: 370px;
+        }
+    }
+}
+
+@media(min-width: 992px) {
+     /*O NAS*/
+     .about-us {
+        img {
+            width: 500px;
+        }
     }
 }
