@@ -16,9 +16,36 @@ body {
 }
 
 h2 {
+    position: relative;
     text-align: center;
     text-transform: uppercase;
 }
+
+h2::before,
+h2::after {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 5px;
+
+}
+
+h2::before {
+    top: -4px;
+    left: -8px;
+    border-top: 3px solid $main_color;
+    border-left: 3px solid $main_color;
+}
+
+h2::after {
+    bottom: -4px;
+    right: -8px;
+    border-bottom: 3px solid $main_color;
+    border-right: 3px solid $main_color;
+}
+
+
 
 /*NAWIGACJA*/
 .navbar {
@@ -27,10 +54,11 @@ h2 {
     box-shadow: 3px 1px 10px grey;
 
     img {
-        height: 60px;
+        height: 50px;
     }
 
     a {
+        font-weight: 600;
         text-transform: uppercase;
         color: $black_color;
         transition: color .4s;
@@ -61,20 +89,6 @@ h2 {
         width: 100%;
         height: 100%;
         background-color: rgba(0, 0, 0, .4);
-
-        i {
-            position: absolute;
-            bottom: 5px;
-            font-size: 40px;
-            color: $main_color;
-            left: 50%;
-            transform: translateX(-50%);
-            transition: color .4s;
-        }
-
-        i:hover {
-            color: $second_color;
-        }
     }
 
     .header-text {
@@ -95,7 +109,7 @@ h2 {
             }
 
             span:hover {
-                color: $second_color;
+                color: $second_dark;
             }
         }
     }
@@ -107,6 +121,14 @@ h2 {
         border-radius: 10px;
         width: 200px;
     }
+
+    p {
+        font-style: italic;
+
+        span {
+            color: $main_color;
+        }
+    }
 }
 
 
@@ -117,11 +139,11 @@ h2 {
     /*NAWIGACJA*/
     .navbar {
         img {
-            height: 80px;
+            height: 60px;
         }
     }
 
-    /*HEADER*/ 
+    /*HEADER*/
     .header {
         .header-img {
             height: 400px;
@@ -137,7 +159,8 @@ h2 {
 }
 
 @media(min-width: 576px) {
-    /*HEADER*/ 
+
+    /*HEADER*/
     .header {
         .header-img {
             height: 500px;
@@ -153,7 +176,8 @@ h2 {
 }
 
 @media(min-width: 768px) {
-    /*HEADER*/ 
+
+    /*HEADER*/
     .header {
         .header-img {
             background-image: url('../img/header/header_big.jpeg');
@@ -175,10 +199,21 @@ h2 {
 }
 
 @media(min-width: 992px) {
-     /*O NAS*/
-     .about-us {
+
+    /*O NAS*/
+    .about-us {
         img {
             width: 500px;
+        }
+    }
+}
+
+@media(min-width: 1200px) {
+
+    /*NAWIGACJA*/
+    .navbar {
+        img {
+            height: 80px;
         }
     }
 }

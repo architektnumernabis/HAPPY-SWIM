@@ -22,8 +22,32 @@ body {
 }
 
 h2 {
+  position: relative;
   text-align: center;
   text-transform: uppercase;
+}
+
+h2::before,
+h2::after {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 5px;
+}
+
+h2::before {
+  top: -4px;
+  left: -8px;
+  border-top: 3px solid #7ee8fa;
+  border-left: 3px solid #7ee8fa;
+}
+
+h2::after {
+  bottom: -4px;
+  right: -8px;
+  border-bottom: 3px solid #7ee8fa;
+  border-right: 3px solid #7ee8fa;
 }
 
 /*NAWIGACJA*/
@@ -35,10 +59,11 @@ h2 {
 }
 
 .navbar img {
-  height: 60px;
+  height: 50px;
 }
 
 .navbar a {
+  font-weight: 600;
   text-transform: uppercase;
   color: black;
   -webkit-transition: color .4s;
@@ -46,7 +71,7 @@ h2 {
 }
 
 .navbar a:hover {
-  color: #20bf55;
+  color: #7ee8fa;
 }
 
 .navbar .fa-bars {
@@ -70,22 +95,6 @@ h2 {
   background-color: rgba(0, 0, 0, 0.4);
 }
 
-.header .shadow i {
-  position: absolute;
-  bottom: 5px;
-  font-size: 40px;
-  color: #20bf55;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-  -webkit-transition: color .4s;
-  transition: color .4s;
-}
-
-.header .shadow i:hover {
-  color: #7ee8fa;
-}
-
 .header .header-text {
   position: absolute;
   left: 50%;
@@ -101,14 +110,14 @@ h2 {
 }
 
 .header .header-text h1 span {
-  color: #20bf55;
+  color: #7ee8fa;
   -webkit-transition: color .4s;
   transition: color .4s;
   cursor: pointer;
 }
 
 .header .header-text h1 span:hover {
-  color: #7ee8fa;
+  color: #3e6ccf;
 }
 
 /*O NAS*/
@@ -117,11 +126,19 @@ h2 {
   width: 200px;
 }
 
+.about-us p {
+  font-style: italic;
+}
+
+.about-us p span {
+  color: #7ee8fa;
+}
+
 /*MEDIA QUERIES*/
 @media (min-width: 375px) {
   /*NAWIGACJA*/
   .navbar img {
-    height: 80px;
+    height: 60px;
   }
   /*HEADER*/
   .header .header-img {
@@ -162,6 +179,13 @@ h2 {
   /*O NAS*/
   .about-us img {
     width: 500px;
+  }
+}
+
+@media (min-width: 1200px) {
+  /*NAWIGACJA*/
+  .navbar img {
+    height: 80px;
   }
 }
 /*# sourceMappingURL=main.css.map */
