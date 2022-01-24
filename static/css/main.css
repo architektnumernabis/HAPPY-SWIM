@@ -21,14 +21,14 @@ body {
   background-image: linear-gradient(315deg, #7ee8fa 0%, #80ff72 74%);
 }
 
-h2 {
+.h2 {
   position: relative;
   text-align: center;
   text-transform: uppercase;
 }
 
-h2::before,
-h2::after {
+.h2::before,
+.h2::after {
   content: '';
   position: absolute;
   width: 20px;
@@ -36,14 +36,14 @@ h2::after {
   border-radius: 5px;
 }
 
-h2::before {
+.h2::before {
   top: -4px;
   left: -8px;
   border-top: 3px solid #7ee8fa;
   border-left: 3px solid #7ee8fa;
 }
 
-h2::after {
+.h2::after {
   bottom: -4px;
   right: -8px;
   border-bottom: 3px solid #7ee8fa;
@@ -54,8 +54,8 @@ h2::after {
 .navbar {
   background-color: #fff;
   z-index: 10;
-  -webkit-box-shadow: 3px 1px 10px grey;
-          box-shadow: 3px 1px 10px grey;
+  -webkit-box-shadow: 3px 1px 10px gray;
+          box-shadow: 3px 1px 10px gray;
 }
 
 .navbar img {
@@ -132,6 +132,82 @@ h2::after {
 
 .about-us p span {
   color: #7ee8fa;
+}
+
+.about-us-two .cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.about-us-two .card-one:hover > .text {
+  -webkit-clip-path: circle(80% at 50% 50%);
+          clip-path: circle(80% at 50% 50%);
+}
+
+.about-us-two .card-one {
+  position: relative;
+  height: 300px;
+  width: 200px;
+  border-radius: 10px;
+  background-position: center;
+  background-size: cover;
+  margin: 20px;
+  -webkit-box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.7);
+          box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.7);
+  cursor: crosshair;
+}
+
+.about-us-two .card-one .text {
+  height: inherit;
+  width: inherit;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.85);
+  color: #fff;
+  -webkit-clip-path: circle(0 at 50% 50%);
+          clip-path: circle(0 at 50% 50%);
+  -webkit-transition: -webkit-clip-path .8s;
+  transition: -webkit-clip-path .8s;
+  transition: clip-path .8s;
+  transition: clip-path .8s, -webkit-clip-path .8s;
+}
+
+.about-us-two .card-one .text h3 {
+  font-weight: bold;
+}
+
+.about-us-two .card-one .text p {
+  color: #7ee8fa;
+}
+
+.about-us-two .card-dorothy {
+  background-image: url("../img/aboutus/dorotka.png");
+}
+
+.about-us-two .card-ola {
+  background-image: url("../img/aboutus/olka.png");
+}
+
+.about-us-two .card-eve {
+  background-image: url("../img/aboutus/ewelinka.png");
 }
 
 /*MEDIA QUERIES*/

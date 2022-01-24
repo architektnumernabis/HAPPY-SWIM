@@ -10,19 +10,19 @@ body {
 }
 
 .gradient {
-    background-color: #20bf55;
-    background-color: #7ee8fa;
+    background-color: $green_main;
+    background-color: $main_color;
     background-image: linear-gradient(315deg, #7ee8fa 0%, #80ff72 74%);
 }
 
-h2 {
+.h2 {
     position: relative;
     text-align: center;
     text-transform: uppercase;
 }
 
-h2::before,
-h2::after {
+.h2::before,
+.h2::after {
     content: '';
     position: absolute;
     width: 20px;
@@ -31,14 +31,14 @@ h2::after {
 
 }
 
-h2::before {
+.h2::before {
     top: -4px;
     left: -8px;
     border-top: 3px solid $main_color;
     border-left: 3px solid $main_color;
 }
 
-h2::after {
+.h2::after {
     bottom: -4px;
     right: -8px;
     border-bottom: 3px solid $main_color;
@@ -51,7 +51,7 @@ h2::after {
 .navbar {
     background-color: $white_color;
     z-index: 10;
-    box-shadow: 3px 1px 10px grey;
+    box-shadow: 3px 1px 10px $gray_color;
 
     img {
         height: 50px;
@@ -128,6 +128,67 @@ h2::after {
         span {
             color: $main_color;
         }
+    }
+}
+
+.about-us-two {
+    .cards {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .card-one:hover>.text {
+        clip-path: circle(80% at 50% 50%);
+    }
+
+    .card-one {
+        position: relative;
+        height: 300px;
+        width: 200px;
+        border-radius: 10px;
+        background-position: center;
+        background-size: cover;
+        margin: 20px;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, .7);
+        cursor: crosshair;
+
+        .text {
+            height: inherit;
+            width: inherit;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            border-radius: 10px;
+            background-color: rgba(0, 0, 0, .85);
+            color: $white_color;
+            clip-path: circle(0 at 50% 50%);
+            transition: clip-path .8s;
+
+            h3 {
+                font-weight: bold;
+            }
+
+            p {
+                color: $main_color;
+            }
+        }
+    }
+
+    .card-dorothy {
+        background-image: url('../img/aboutus/dorotka.png');
+    }
+
+    .card-ola {
+        background-image: url('../img/aboutus/olka.png');
+    }
+
+    .card-eve {
+        background-image: url('../img/aboutus/ewelinka.png');
     }
 }
 
