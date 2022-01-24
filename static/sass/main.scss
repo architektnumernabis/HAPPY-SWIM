@@ -115,82 +115,97 @@ body {
     }
 }
 
-/*O NAS*/
-.about-us {
-    img {
-        border-radius: 10px;
-        width: 200px;
-    }
+/*MAIN*/
+.main {
 
-    p {
-        font-style: italic;
-
-        span {
-            color: $main_color;
-        }
-    }
-}
-
-.about-us-two {
-    .cards {
-        display: flex;
-        justify-content: space-evenly;
-    }
-
-    .card-one:hover>.text {
-        clip-path: circle(80% at 50% 50%);
-    }
-
-    .card-one {
-        position: relative;
-        height: 300px;
-        width: 200px;
-        border-radius: 10px;
-        background-position: center;
-        background-size: cover;
-        margin: 20px;
-        box-shadow: 5px 5px 10px rgba(0, 0, 0, .7);
-        cursor: crosshair;
-
-        .text {
-            height: inherit;
-            width: inherit;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            position: absolute;
-            top: 0;
-            bottom: 0;
-            left: 0;
-            right: 0;
+    /*O NAS*/
+    .about-us {
+        img {
             border-radius: 10px;
-            background-color: rgba(0, 0, 0, .85);
-            color: $white_color;
-            clip-path: circle(0 at 50% 50%);
-            transition: clip-path .8s;
+            width: 200px;
+        }
 
-            h3 {
-                font-weight: bold;
-            }
+        p {
+            font-style: italic;
 
-            p {
+            span {
                 color: $main_color;
             }
         }
     }
 
-    .card-dorothy {
-        background-image: url('../img/aboutus/dorotka.png');
+    .about-us-two {
+        .cards {
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .card-one:hover>.text {
+            clip-path: circle(80% at 50% 50%);
+        }
+
+        .card-one {
+            position: relative;
+            height: 300px;
+            width: 200px;
+            border-radius: 10px;
+            background-position: center;
+            background-size: cover;
+            margin: 20px;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, .7);
+            cursor: crosshair;
+
+            .text {
+                height: inherit;
+                width: inherit;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                border-radius: 10px;
+                background-color: rgba(0, 0, 0, .85);
+                color: $white_color;
+                clip-path: circle(0 at 50% 50%);
+                transition: clip-path .8s;
+
+                h3 {
+                    font-weight: bold;
+                }
+
+                p {
+                    color: $main_color;
+                }
+            }
+        }
+
+        .card-dorothy {
+            background-image: url('../img/aboutus/dorotka.png');
+        }
+
+        .card-ola {
+            background-image: url('../img/aboutus/olka.png');
+        }
+
+        .card-eve {
+            background-image: url('../img/aboutus/ewelinka.png');
+        }
     }
 
-    .card-ola {
-        background-image: url('../img/aboutus/olka.png');
+    .movies {
+        iframe {
+            border-radius: 10px;
+        }
     }
 
-    .card-eve {
-        background-image: url('../img/aboutus/ewelinka.png');
-    }
 }
+
+
+
+
 
 
 
@@ -211,10 +226,14 @@ body {
         }
     }
 
-    /*O NAS*/
-    .about-us {
-        img {
-            width: 340px;
+    /*MAIN*/
+    .main {
+
+        /*O NAS*/
+        .about-us {
+            img {
+                width: 340px;
+            }
         }
     }
 }
@@ -228,10 +247,14 @@ body {
         }
     }
 
-    /*O NAS*/
-    .about-us {
-        img {
-            width: 500px;
+    /*MAIN*/
+    .main {
+
+        /*O NAS*/
+        .about-us {
+            img {
+                width: 500px;
+            }
         }
     }
 }
@@ -251,20 +274,28 @@ body {
         }
     }
 
-    /*O NAS*/
-    .about-us {
-        img {
-            width: 370px;
+    /*MAIN*/
+    .main {
+
+        /*O NAS*/
+        .about-us {
+            img {
+                width: 370px;
+            }
         }
     }
 }
 
 @media(min-width: 992px) {
 
-    /*O NAS*/
-    .about-us {
-        img {
-            width: 500px;
+    /*MAIN*/
+    .main {
+
+        /*O NAS*/
+        .about-us {
+            img {
+                width: 500px;
+            }
         }
     }
 }

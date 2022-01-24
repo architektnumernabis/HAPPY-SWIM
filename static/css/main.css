@@ -120,21 +120,25 @@ body {
   color: #3e6ccf;
 }
 
-/*O NAS*/
-.about-us img {
+/*MAIN*/
+.main {
+  /*O NAS*/
+}
+
+.main .about-us img {
   border-radius: 10px;
   width: 200px;
 }
 
-.about-us p {
+.main .about-us p {
   font-style: italic;
 }
 
-.about-us p span {
+.main .about-us p span {
   color: #7ee8fa;
 }
 
-.about-us-two .cards {
+.main .about-us-two .cards {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -143,12 +147,12 @@ body {
           justify-content: space-evenly;
 }
 
-.about-us-two .card-one:hover > .text {
+.main .about-us-two .card-one:hover > .text {
   -webkit-clip-path: circle(80% at 50% 50%);
           clip-path: circle(80% at 50% 50%);
 }
 
-.about-us-two .card-one {
+.main .about-us-two .card-one {
   position: relative;
   height: 300px;
   width: 200px;
@@ -161,7 +165,7 @@ body {
   cursor: crosshair;
 }
 
-.about-us-two .card-one .text {
+.main .about-us-two .card-one .text {
   height: inherit;
   width: inherit;
   display: -webkit-box;
@@ -190,24 +194,28 @@ body {
   transition: clip-path .8s, -webkit-clip-path .8s;
 }
 
-.about-us-two .card-one .text h3 {
+.main .about-us-two .card-one .text h3 {
   font-weight: bold;
 }
 
-.about-us-two .card-one .text p {
+.main .about-us-two .card-one .text p {
   color: #7ee8fa;
 }
 
-.about-us-two .card-dorothy {
+.main .about-us-two .card-dorothy {
   background-image: url("../img/aboutus/dorotka.png");
 }
 
-.about-us-two .card-ola {
+.main .about-us-two .card-ola {
   background-image: url("../img/aboutus/olka.png");
 }
 
-.about-us-two .card-eve {
+.main .about-us-two .card-eve {
   background-image: url("../img/aboutus/ewelinka.png");
+}
+
+.main .movies iframe {
+  border-radius: 10px;
 }
 
 /*MEDIA QUERIES*/
@@ -220,8 +228,11 @@ body {
   .header .header-img {
     height: 400px;
   }
-  /*O NAS*/
-  .about-us img {
+  /*MAIN*/
+  .main {
+    /*O NAS*/
+  }
+  .main .about-us img {
     width: 340px;
   }
 }
@@ -231,8 +242,11 @@ body {
   .header .header-img {
     height: 500px;
   }
-  /*O NAS*/
-  .about-us img {
+  /*MAIN*/
+  .main {
+    /*O NAS*/
+  }
+  .main .about-us img {
     width: 500px;
   }
 }
@@ -245,15 +259,21 @@ body {
   .header .header-img .header-text h1 {
     font-size: 50px;
   }
-  /*O NAS*/
-  .about-us img {
+  /*MAIN*/
+  .main {
+    /*O NAS*/
+  }
+  .main .about-us img {
     width: 370px;
   }
 }
 
 @media (min-width: 992px) {
-  /*O NAS*/
-  .about-us img {
+  /*MAIN*/
+  .main {
+    /*O NAS*/
+  }
+  .main .about-us img {
     width: 500px;
   }
 }
