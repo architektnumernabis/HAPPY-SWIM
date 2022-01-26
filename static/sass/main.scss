@@ -195,19 +195,15 @@ body {
         }
     }
 
+    /*MOVIES*/
     .movies {
         iframe {
             border-radius: 10px;
+            width: 200px;
         }
     }
 
 }
-
-
-
-
-
-
 
 /*MEDIA QUERIES*/
 @media(min-width: 375px) {
@@ -235,6 +231,14 @@ body {
                 width: 340px;
             }
         }
+
+        /*MOVIES*/
+        .movies {
+            iframe {
+                width: 300px;
+                height: 200px;
+            }
+        }
     }
 }
 
@@ -254,6 +258,14 @@ body {
         .about-us {
             img {
                 width: 500px;
+            }
+        }
+
+        /*MOVIES*/
+        .movies {
+            iframe {
+                width: 500px;
+                height: 300px;
             }
         }
     }
@@ -297,6 +309,13 @@ body {
                 width: 500px;
             }
         }
+
+        /*MOVIES*/
+        .movies {
+            iframe {
+                width: 450px;
+            }
+        }
     }
 }
 
@@ -306,6 +325,24 @@ body {
     .navbar {
         img {
             height: 80px;
+        }
+    }
+
+    /*HEADER*/
+    .header {
+        .header-img {
+            height: 700px;
+        }
+    }
+
+    /*MAIN*/
+    .main {
+        
+        /*MOVIES*/
+        .movies {
+            iframe {
+                width: 500px;
+            }
         }
     }
 }

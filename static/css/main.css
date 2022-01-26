@@ -123,6 +123,7 @@ body {
 /*MAIN*/
 .main {
   /*O NAS*/
+  /*MOVIES*/
 }
 
 .main .about-us img {
@@ -216,6 +217,7 @@ body {
 
 .main .movies iframe {
   border-radius: 10px;
+  width: 200px;
 }
 
 /*MEDIA QUERIES*/
@@ -231,9 +233,14 @@ body {
   /*MAIN*/
   .main {
     /*O NAS*/
+    /*MOVIES*/
   }
   .main .about-us img {
     width: 340px;
+  }
+  .main .movies iframe {
+    width: 300px;
+    height: 200px;
   }
 }
 
@@ -245,9 +252,14 @@ body {
   /*MAIN*/
   .main {
     /*O NAS*/
+    /*MOVIES*/
   }
   .main .about-us img {
     width: 500px;
+  }
+  .main .movies iframe {
+    width: 500px;
+    height: 300px;
   }
 }
 
@@ -272,9 +284,13 @@ body {
   /*MAIN*/
   .main {
     /*O NAS*/
+    /*MOVIES*/
   }
   .main .about-us img {
     width: 500px;
+  }
+  .main .movies iframe {
+    width: 450px;
   }
 }
 
@@ -282,6 +298,17 @@ body {
   /*NAWIGACJA*/
   .navbar img {
     height: 80px;
+  }
+  /*HEADER*/
+  .header .header-img {
+    height: 700px;
+  }
+  /*MAIN*/
+  .main {
+    /*MOVIES*/
+  }
+  .main .movies iframe {
+    width: 500px;
   }
 }
 /*# sourceMappingURL=main.css.map */
