@@ -283,11 +283,11 @@ body {
     .header {
         &__img {
             background-image: url('../img/header/header_big.jpeg');
+        }
 
-            .header-text {
-                h1 {
-                    font-size: 50px;
-                }
+        &__text {
+            &__h1 {
+                font-size: 50px;
             }
         }
     }

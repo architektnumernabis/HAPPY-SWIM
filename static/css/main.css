@@ -272,7 +272,7 @@ body {
   .header__img {
     background-image: url("../img/header/header_big.jpeg");
   }
-  .header__img .header-text h1 {
+  .header__text__h1 {
     font-size: 50px;
   }
   /*O NAS*/
