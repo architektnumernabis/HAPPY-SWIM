@@ -212,8 +212,12 @@ body {
   background-image: url("../img/aboutus/ewelinka.png");
 }
 
-/*MOVIES*/
-.movies iframe {
+/*STYLES*/
+.styles {
+  /*MOVIES*/
+}
+
+.styles__movies__iframe {
   border-radius: 10px;
   width: 200px;
 }
@@ -233,8 +237,11 @@ body {
   .about-us__img {
     width: 340px;
   }
-  /*MOVIES*/
-  .movies iframe {
+  /*STYLES*/
+  .styles {
+    /*MOVIES*/
+  }
+  .styles__movies__iframe {
     width: 300px;
     height: 200px;
   }
@@ -250,8 +257,11 @@ body {
   .about-us__img {
     width: 500px;
   }
-  /*MOVIES*/
-  .movies iframe {
+  /*STYLES*/
+  .styles {
+    /*MOVIES*/
+  }
+  .styles__movies__iframe {
     width: 500px;
     height: 300px;
   }
@@ -277,8 +287,11 @@ body {
   .about-us__img {
     width: 500px;
   }
-  /*MOVIES*/
-  .movies iframe {
+  /*STYLES*/
+  .styles {
+    /*MOVIES*/
+  }
+  .styles__movies__iframe {
     width: 450px;
   }
 }
@@ -292,11 +305,11 @@ body {
   .header__img {
     height: 700px;
   }
-  /*MAIN*/
-  .main {
+  /*STYLES*/
+  .styles {
     /*MOVIES*/
   }
-  .main .movies iframe {
+  .styles__movies__iframe {
     width: 500px;
   }
 }

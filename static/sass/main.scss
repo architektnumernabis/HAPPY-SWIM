@@ -195,13 +195,18 @@ body {
     }
 }
 
-/*MOVIES*/
-.movies {
-    iframe {
-        border-radius: 10px;
-        width: 200px;
+/*STYLES*/
+.styles {
+
+    /*MOVIES*/
+    &__movies {
+        &__iframe {
+            border-radius: 10px;
+            width: 200px;
+        }
     }
 }
+
 
 /*MEDIA QUERIES*/
 @media(min-width: 375px) {
@@ -228,11 +233,15 @@ body {
         }
     }
 
-    /*MOVIES*/
-    .movies {
-        iframe {
-            width: 300px;
-            height: 200px;
+    /*STYLES*/
+    .styles {
+
+        /*MOVIES*/
+        &__movies {
+            &__iframe {
+                width: 300px;
+                height: 200px;
+            }
         }
     }
 }
@@ -254,11 +263,15 @@ body {
         }
     }
 
-    /*MOVIES*/
-    .movies {
-        iframe {
-            width: 500px;
-            height: 300px;
+    /*STYLES*/
+    .styles {
+
+        /*MOVIES*/
+        &__movies {
+            &__iframe {
+                width: 500px;
+                height: 300px;
+            }
         }
     }
 }
@@ -289,18 +302,23 @@ body {
 
 
 @media(min-width: 992px) {
+
     /*MAIN*/
     /*O NAS*/
     .about-us {
-        &__img{
+        &__img {
             width: 500px;
         }
     }
 
-    /*MOVIES*/
-    .movies {
-        iframe {
-            width: 450px;
+    /*STYLES*/
+    .styles {
+
+        /*MOVIES*/
+        &__movies {
+            &__iframe {
+                width: 450px;
+            }
         }
     }
 }
@@ -322,12 +340,13 @@ body {
         }
     }
 
-    /*MAIN*/
-    .main {
+
+    /*STYLES*/
+    .styles {
 
         /*MOVIES*/
-        .movies {
-            iframe {
+        &__movies {
+            &__iframe {
                 width: 500px;
             }
         }
