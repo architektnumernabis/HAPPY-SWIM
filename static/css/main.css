@@ -80,7 +80,7 @@ body {
 }
 
 /*HEADER*/
-.header .header-img {
+.header__img {
   position: relative;
   height: 300px;
   background-image: url("../img/header/header_small.jpeg");
@@ -88,14 +88,14 @@ body {
   background-size: cover;
 }
 
-.header .shadow {
+.header__shadow {
   position: absolute;
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.4);
 }
 
-.header .header-text {
+.header__text {
   position: absolute;
   left: 50%;
   top: 50%;
@@ -104,42 +104,39 @@ body {
   color: #fff;
 }
 
-.header .header-text h1 {
+.header__text__h1 {
   font-weight: bold;
   text-shadow: 2px 4px black;
 }
 
-.header .header-text h1 span {
+.header__text__h1__span {
   color: #7ee8fa;
   -webkit-transition: color .4s;
   transition: color .4s;
   cursor: pointer;
 }
 
-.header .header-text h1 span:hover {
+.header__text__h1__span:hover {
   color: #3e6ccf;
 }
 
 /*MAIN*/
-.main {
-  /*O NAS*/
-  /*MOVIES*/
-}
-
-.main .about-us img {
+/*O NAS*/
+.about-us__img {
   border-radius: 10px;
   width: 200px;
 }
 
-.main .about-us p {
+.about-us__p {
   font-style: italic;
 }
 
-.main .about-us p span {
+.about-us__p__span {
+  font-weight: bold;
   color: #7ee8fa;
 }
 
-.main .about-us-two .cards {
+.about-us-two__cards {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -148,12 +145,12 @@ body {
           justify-content: space-evenly;
 }
 
-.main .about-us-two .card-one:hover > .text {
+.about-us-two__card-one:hover > .about-us-two__card-one__text {
   -webkit-clip-path: circle(80% at 50% 50%);
           clip-path: circle(80% at 50% 50%);
 }
 
-.main .about-us-two .card-one {
+.about-us-two__card-one {
   position: relative;
   height: 300px;
   width: 200px;
@@ -166,7 +163,7 @@ body {
   cursor: crosshair;
 }
 
-.main .about-us-two .card-one .text {
+.about-us-two__card-one__text {
   height: inherit;
   width: inherit;
   display: -webkit-box;
@@ -195,27 +192,28 @@ body {
   transition: clip-path .8s, -webkit-clip-path .8s;
 }
 
-.main .about-us-two .card-one .text h3 {
+.about-us-two__card-one__text h3 {
   font-weight: bold;
 }
 
-.main .about-us-two .card-one .text p {
+.about-us-two__card-one__text p {
   color: #7ee8fa;
 }
 
-.main .about-us-two .card-dorothy {
+.about-us-two__card-dorothy {
   background-image: url("../img/aboutus/dorotka.png");
 }
 
-.main .about-us-two .card-ola {
+.about-us-two__card-ola {
   background-image: url("../img/aboutus/olka.png");
 }
 
-.main .about-us-two .card-eve {
+.about-us-two__card-eve {
   background-image: url("../img/aboutus/ewelinka.png");
 }
 
-.main .movies iframe {
+/*MOVIES*/
+.movies iframe {
   border-radius: 10px;
   width: 200px;
 }
@@ -223,22 +221,20 @@ body {
 /*MEDIA QUERIES*/
 @media (min-width: 375px) {
   /*NAWIGACJA*/
-  .navbar img {
+  .navbar__img {
     height: 60px;
   }
   /*HEADER*/
-  .header .header-img {
+  .header__img {
     height: 400px;
   }
   /*MAIN*/
-  .main {
-    /*O NAS*/
-    /*MOVIES*/
-  }
-  .main .about-us img {
+  /*O NAS*/
+  .about-us__img {
     width: 340px;
   }
-  .main .movies iframe {
+  /*MOVIES*/
+  .movies iframe {
     width: 300px;
     height: 200px;
   }
@@ -246,18 +242,16 @@ body {
 
 @media (min-width: 576px) {
   /*HEADER*/
-  .header .header-img {
+  .header__img {
     height: 500px;
   }
   /*MAIN*/
-  .main {
-    /*O NAS*/
-    /*MOVIES*/
-  }
-  .main .about-us img {
+  /*O NAS*/
+  .about-us__img {
     width: 500px;
   }
-  .main .movies iframe {
+  /*MOVIES*/
+  .movies iframe {
     width: 500px;
     height: 300px;
   }
@@ -265,42 +259,37 @@ body {
 
 @media (min-width: 768px) {
   /*HEADER*/
-  .header .header-img {
+  .header__img {
     background-image: url("../img/header/header_big.jpeg");
   }
-  .header .header-img .header-text h1 {
+  .header__img .header-text h1 {
     font-size: 50px;
   }
-  /*MAIN*/
-  .main {
-    /*O NAS*/
-  }
-  .main .about-us img {
+  /*O NAS*/
+  .about-us__img {
     width: 370px;
   }
 }
 
 @media (min-width: 992px) {
   /*MAIN*/
-  .main {
-    /*O NAS*/
-    /*MOVIES*/
-  }
-  .main .about-us img {
+  /*O NAS*/
+  .about-us__img {
     width: 500px;
   }
-  .main .movies iframe {
+  /*MOVIES*/
+  .movies iframe {
     width: 450px;
   }
 }
 
 @media (min-width: 1200px) {
   /*NAWIGACJA*/
-  .navbar img {
+  .navbar__img {
     height: 80px;
   }
   /*HEADER*/
-  .header .header-img {
+  .header__img {
     height: 700px;
   }
   /*MAIN*/

@@ -43,19 +43,17 @@
 
   <!--HEADER-->
   <header class="header">
-    <div class="header-img">
-      <div class="shadow">
-
-      </div>
-      <div class="header-text">
-        <h1>Happy<span>Swim</span></h1>
+    <div class="header__img">
+      <div class="header__shadow"></div>
+      <div class="header__text">
+        <h1 class="header__text__h1">Happy<span class="header__text__h1__span">Swim</span></h1>
         <p class="text-center">Dołącz do nas już dziś!</p>
       </div>
     </div>
   </header>
 
   <!--MAIN-->
-  <main class="main">
+  <main>
 
     <!--O NAS-->
     <section id="about-us" class="py-4 about-us">
@@ -65,16 +63,13 @@
         </div>
         <div class="row">
           <div class="col-md-6 py-3 text-center">
-            <img src="/static/img/aboutus/header.png" alt="">
+            <img class="about-us__img"src="/static/img/aboutus/header.png" alt="">
           </div>
           <div class="col-md-6 py-3 text-center d-flex flex-column justify-content-center px-5">
-            <p>Miłość do sportu i pasja do pływania. Zapraszam Cię do mojej szkoły, w której nauczę Cię pływać, bądź
+            <p class="about-us__p">Miłość do sportu i pasja do pływania. Zapraszam Cię do mojej szkoły, w której nauczę Cię pływać, bądź
               udoskonalę Twoje umiejętności! Zajęcia prowadzimy dla dzieci i dorosłych.</p>
-            <p>Dolącz do teamu
-              <span class="fw-bold">
-                <span style="color: red">H</span><span style="color:blue">a</span><span style="color: rgb(223, 223, 21)">p</span><span style="color: purple">p</span><span style="color: red">y</span>
-              <span style="color: rgb(223, 223, 21)">S</span><span style="color: red">w</span><span style="color: blue">i</span><span style="color: rgb(41, 226, 41)">m</span>!
-              </span>
+            <p class="about-us__p">Dolącz do teamu
+             Happy <span class="about-us__p__span">Swim</span>!
             </p>
           </div>
         </div>
@@ -87,21 +82,21 @@
         <div class="d-flex justify-content-center align-items-center">
           <h2 class="text-uppercase h2">nasz team</h2>
         </div>
-        <div class="row text-center py-3 cards">
-          <div class="col-md-6 col-lg-4 card-one card-dorothy">
-            <div class="text">
+        <div class="row text-center py-3 about-us-two__cards">
+          <div class="col-md-6 col-lg-4 about-us-two__card-one about-us-two__card-dorothy">
+            <div class="about-us-two__card-one__text">
               <h3>Dorota Jarnot</h3>
               <p>założycielka</p>
             </div>
           </div>
-          <div class="col-lg-4 order-1 card-one card-ola">
-            <div class="text">
+          <div class="col-lg-4 order-1 about-us-two__card-one about-us-two__card-ola">
+            <div class="about-us-two__card-one__text">
               <h3>Aleksandra Klisiak</h3>
               <p>instruktorka</p>
             </div>
           </div>
-          <div class="col-md-6 col-lg-4 card-one card-eve">
-            <div class="text">
+          <div class="col-md-6 col-lg-4 about-us-two__card-one about-us-two__card-eve">
+            <div class="about-us-two__card-one__text">
               <h3>Ewelina Pałka</h3>
               <p>instruktorka</p>
             </div>
@@ -118,19 +113,24 @@
         </div>
         <div class="row text-center">
           <div class="col-lg-6 py-3 py-lg-4">
-            <iframe src="https://www.youtube.com/embed/D342dl0qRt4"
-              title="YouTube video player" frameborder="0"
+            <iframe src="https://www.youtube.com/embed/D342dl0qRt4" title="YouTube video player" frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowfullscreen></iframe>
           </div>
           <div class="col-lg-6 py-3 py-lg-4">
-            <iframe src="https://www.youtube.com/embed/2HR0N8rNq0o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/2HR0N8rNq0o" title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen></iframe>
           </div>
           <div class="col-lg-6 py-3 py-lg-4">
-            <iframe src="https://www.youtube.com/embed/1Fvdw2g96SI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/1Fvdw2g96SI" title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen></iframe>
           </div>
           <div class="col-lg-6 py-3 py-lg-4">
-            <iframe src="https://www.youtube.com/embed/sgNDaUmY86E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/sgNDaUmY86E" title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen></iframe>
           </div>
         </div>
       </div>
@@ -145,7 +145,8 @@
         </div>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, animi! Repellendus sint sequi laborum ab?
           Voluptatum animi quisquam earum officia ad sunt atque obcaecati iusto quo officiis distinctio ut, fugiat nobis
-          aperiam quam error nam magni quibusdam? Dolores fugit itaque iusto soluta, aliquid debitis asperiores fuga, vero
+          aperiam quam error nam magni quibusdam? Dolores fugit itaque iusto soluta, aliquid debitis asperiores fuga,
+          vero
           quisquam ut deserunt?</p>
       </div>
     </section>
