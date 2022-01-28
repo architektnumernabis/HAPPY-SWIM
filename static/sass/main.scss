@@ -53,22 +53,22 @@ body {
     z-index: 10;
     box-shadow: 3px 1px 10px $gray_color;
 
-    img {
+    &__img {
         height: 50px;
     }
 
-    a {
+    &__a {
         font-weight: 600;
         text-transform: uppercase;
         color: $black_color;
         transition: color .4s;
     }
 
-    a:hover {
+    &__a:hover {
         color: $main_color;
     }
 
-    .fa-bars {
+    &__bars {
         padding: 10px;
         font-size: 30px;
     }

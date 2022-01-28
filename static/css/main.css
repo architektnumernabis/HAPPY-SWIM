@@ -58,11 +58,11 @@ body {
           box-shadow: 3px 1px 10px gray;
 }
 
-.navbar img {
+.navbar__img {
   height: 50px;
 }
 
-.navbar a {
+.navbar__a {
   font-weight: 600;
   text-transform: uppercase;
   color: black;
@@ -70,11 +70,11 @@ body {
   transition: color .4s;
 }
 
-.navbar a:hover {
+.navbar__a:hover {
   color: #7ee8fa;
 }
 
-.navbar .fa-bars {
+.navbar__bars {
   padding: 10px;
   font-size: 30px;
 }
