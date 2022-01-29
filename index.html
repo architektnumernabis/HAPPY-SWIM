@@ -13,14 +13,14 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
-  <!--MOJE STYLE-->
+  <!--MY STYLES-->
   <link rel="stylesheet" href="./static/css/main.css">
   <!--FONT AWESOME-->
   <script src="https://kit.fontawesome.com/8f23681658.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-  <!--NAWIGACJA-->
+  <!--NAVBAR-->
   <nav class="navbar-expand-lg navbar-liht position-fixed top-0 w-100 navbar">
     <div class="container">
       <a href="#"><img class="navbar__img" src="./static/img/navigation/logo.webp" alt=""></a>
@@ -30,8 +30,7 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav ms-auto">
-          <a class="nav-link active navbar__a" aria-current="page" href="#">półkolonia 2022</a>
-          <a class="nav-link navbar__a" href="#">o nas</a>
+          <a class="nav-link active navbar__a" aria-current="page" href="#">o nas</a>
           <a class="nav-link navbar__a" href="#">aktualności</a>
           <a class="nav-link navbar__a" href="#">galeria</a>
           <a class="nav-link navbar__a" href="#">dokumenty</a>
@@ -55,47 +54,48 @@
   <!--MAIN-->
   <main>
 
-    <!--O NAS-->
-    <section id="about-us" class="py-4 about-us">
+    <!--ABOUT US-->
+    <section id="about-us" class="py-4 about-us white-background">
       <div class="container">
         <div class="d-flex justify-content-center align-items-center">
           <h2 class="h2">o nas</h2>
         </div>
         <div class="row">
           <div class="col-md-6 py-3 text-center">
-            <img class="about-us__img"src="/static/img/aboutus/header.png" alt="">
+            <img class="about-us__img" src="/static/img/aboutus/header.png" alt="">
           </div>
           <div class="col-md-6 py-3 text-center d-flex flex-column justify-content-center px-5">
-            <p class="about-us__p">Miłość do sportu i pasja do pływania. Zapraszam Cię do mojej szkoły, w której nauczę Cię pływać, bądź
+            <p class="about-us__p">Miłość do sportu i pasja do pływania. Zapraszam Cię do mojej szkoły, w której nauczę
+              Cię pływać, bądź
               udoskonalę Twoje umiejętności! Zajęcia prowadzimy dla dzieci i dorosłych.</p>
             <p class="about-us__p">Dolącz do teamu
-             Happy <span class="about-us__p__span">Swim</span>!
+              Happy <span class="about-us__p__span">Swim</span>!
             </p>
           </div>
         </div>
       </div>
     </section>
 
-    <!--NASZ TEAM-->
+    <!--OUR TEAM-->
     <section class="py-4 about-us-two gradient">
       <div class="container-fluid ">
         <div class="d-flex justify-content-center align-items-center">
           <h2 class="text-uppercase h2">nasz team</h2>
         </div>
         <div class="row text-center py-3 about-us-two__cards">
-          <div class="col-md-6 col-lg-4 about-us-two__card-one about-us-two__card-dorothy">
+          <div class="col-md-6 col-lg-4 about-us-two__card-one about-us-two__card-one--dorothy">
             <div class="about-us-two__card-one__text">
               <h3>Dorota Jarnot</h3>
               <p>założycielka</p>
             </div>
           </div>
-          <div class="col-lg-4 order-1 about-us-two__card-one about-us-two__card-ola">
+          <div class="col-lg-4 order-1 about-us-two__card-one about-us-two__card-one--ola">
             <div class="about-us-two__card-one__text">
               <h3>Aleksandra Klisiak</h3>
               <p>instruktorka</p>
             </div>
           </div>
-          <div class="col-md-6 col-lg-4 about-us-two__card-one about-us-two__card-eve">
+          <div class="col-md-6 col-lg-4 about-us-two__card-one about-us-two__card-one--eve">
             <div class="about-us-two__card-one__text">
               <h3>Ewelina Pałka</h3>
               <p>instruktorka</p>
@@ -105,30 +105,69 @@
       </div>
     </section>
 
-    <!--STYLE PŁYWACKIE-->
-    <section class="py-4 styles">
+    <!--WHY US?-->
+    <section class="py-4 whyus white-background">
+      <div class="container">
+        <div class="d-flex justify-content-center align-items-center pb-2">
+          <h2 class="text-uppercase h2">dlaczego warto nas wybrać?</h2>
+        </div>
+        <div class="row text-center py-5">
+          <div class="col-sm-6 col-lg-2 whyus__column">
+            <i class="fas fa-child whyus__icon"></i>
+            <p class="whyus__icon__text">prowadzimy zajęcia dla dzieci...</p>
+          </div>
+          <div class="col-sm-6 col-lg-2 whyus__column">
+            <i class="fas fa-smile-beam whyus__icon"></i>
+            <p class="whyus__icon__text">...które wychodzą od nas uśmiechnięte! </p>
+          </div>
+          <div class="col-sm-6 col-lg-2 whyus__column">
+            <i class="fas fa-certificate whyus__icon"></i>
+            <p class="whyus__icon__text">jesteśmy certyfikowanymi trenerami</p>
+          </div>
+          <div class="col-sm-6 col-lg-2 whyus__column">
+            <i class="fas fa-chart-line whyus__icon"></i>
+            <p class="whyus__icon__text">stawiamy na nieustanny rozwój</p>
+          </div>
+          <div class="col-sm-6 col-lg-2 whyus__column">
+            <i class="far fa-handshake whyus__icon"></i>
+            <p class="whyus__icon__text">mamy wielu zadowolonych klientów</p>
+          </div>
+          <div class="col-sm-6 col-lg-2">
+            <i class="fas fa-swimmer whyus__icon"></i>
+            <p class="whyus__icon__text">nauczymy pływać każdego!</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--SWIMMING STYLES-->
+    <section class="py-4 styles gradient">
       <div class="container py-2 styles__movies">
         <div class="d-flex justify-content-center align-items-center pb-2">
           <h2 class="text-uppercase h2">style pływackie</h2>
         </div>
         <div class="row text-center">
           <div class="col-lg-6 py-3 py-lg-4">
-            <iframe class="styles__movies__iframe" src="https://www.youtube.com/embed/D342dl0qRt4" title="YouTube video player" frameborder="0"
+            <iframe class="styles__movies__iframe" src="https://www.youtube.com/embed/D342dl0qRt4"
+              title="YouTube video player" frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowfullscreen></iframe>
           </div>
           <div class="col-lg-6 py-3 py-lg-4">
-            <iframe class="styles__movies__iframe" src="https://www.youtube.com/embed/2HR0N8rNq0o" title="YouTube video player" frameborder="0"
+            <iframe class="styles__movies__iframe" src="https://www.youtube.com/embed/2HR0N8rNq0o"
+              title="YouTube video player" frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowfullscreen></iframe>
           </div>
           <div class="col-lg-6 py-3 py-lg-4">
-            <iframe class="styles__movies__iframe" src="https://www.youtube.com/embed/1Fvdw2g96SI" title="YouTube video player" frameborder="0"
+            <iframe class="styles__movies__iframe" src="https://www.youtube.com/embed/1Fvdw2g96SI"
+              title="YouTube video player" frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowfullscreen></iframe>
           </div>
           <div class="col-lg-6 py-3 py-lg-4">
-            <iframe class="styles__movies__iframe" src="https://www.youtube.com/embed/sgNDaUmY86E" title="YouTube video player" frameborder="0"
+            <iframe class="styles__movies__iframe" src="https://www.youtube.com/embed/sgNDaUmY86E"
+              title="YouTube video player" frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowfullscreen></iframe>
           </div>
@@ -136,18 +175,34 @@
       </div>
     </section>
 
-
-    <!--KONTAKT-->
-    <section class="py-4 contact gradient">
-      <div class="container">
-        <div class="d-flex justify-content-center align-items-center pb-2">
-          <h2 class="text-uppercase h2">kontakt</h2>
+    <!--CONTACT-->
+    <section class="contact">
+      <div class="contact__img">
+        <div class="contact__shadow"></div>
+        <div class="container py-4">
+          <div class="d-flex justify-content-center align-items-center pb-2">
+            <h2 class="text-uppercase h2">kontakt</h2>
+          </div>
+          <div class="row text-center py-5">
+            <div class="col-sm-6 col-lg-3 py-3">
+              <i class="fas fa-phone-square-alt contact__item"></i>
+              <p class="contact__item__text">693 361 952<br>607 960 731</p>
+            </div>
+            <div class="col-sm-6 col-lg-3 py-3">
+              <a class="contact__link" href="https://www.facebook.com/Happy-Swim-Szko%C5%82a-P%C5%82ywania-Doroty-Jarnot-744226262434107" target="blank"><i class="fab fa-facebook contact__item"></i></a>
+              <p class="text-uppercase contact__item__text">happy swim na facebooku!</p>
+            </div>
+            <div class="col-sm-6 col-lg-3 py-3">
+              <a class="contact__link" href=" https://www.instagram.com/happyswimoswiecim/"target="blank" ><i class="fab fa-instagram contact__item"></i></a>
+              <p class="text-uppercase contact__item__text">obserwuj nas na instagramie!</p>
+            </div>
+            <div class="col-sm-6 col-lg-3 py-3">
+              <i class="far fa-envelope contact__item"></i>
+              <p class="contact__item__text">szkola.happyswim@gmail.com</p>
+            </div>
+          </div>
         </div>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, animi! Repellendus sint sequi laborum ab?
-          Voluptatum animi quisquam earum officia ad sunt atque obcaecati iusto quo officiis distinctio ut, fugiat nobis
-          aperiam quam error nam magni quibusdam? Dolores fugit itaque iusto soluta, aliquid debitis asperiores fuga,
-          vero
-          quisquam ut deserunt?</p>
+
       </div>
     </section>
   </main>
@@ -155,7 +210,7 @@
 
 
   <!--FOOTER-->
-  <footer class="bg-dark text-light py-4 text-center">
+  <footer class="text-light py-4 text-center gradient">
     <p class="mb-0">footer</p>
   </footer>
 
