@@ -4,7 +4,7 @@
 /*COLORS*/
 @import 'colors.scss';
 
-/*WHITE-BACKGROUND*/ 
+/*WHITE-BACKGROUND*/
 @import 'white-background.scss';
 
 /*COMMON CLASSES*/
@@ -196,18 +196,6 @@ body {
     }
 }
 
-/*SWIMMING STYLES*/
-.styles {
-
-    /*MOVIES*/
-    &__movies {
-        &__iframe {
-            border-radius: 10px;
-            width: 200px;
-        }
-    }
-}
-
 /*WHYUS*/
 .whyus {
     &__column {
@@ -227,47 +215,43 @@ body {
     }
 }
 
-/*KONTAKT*/
-.contact {
-    color: $white_color;
+/*SWIMMING STYLES*/
+.styles {
 
-    &__img {
-        position: relative;
-        background-image: url('../img/contact/contact_small.jpeg');
-        background-position: center;
-        background-size: cover;
-        background-attachment: fixed;
-        z-index: 0;
-    }
-
-    &__shadow {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        background-color: rgba(0,0,0, .7);
-        z-index: -10;
-
-    }
-
-    &__item {
-        font-size: 60px;
-        transition: all .4s;
-
-        &__text {
-            padding-top: 7px;
+    /*MOVIES*/
+    &__movies {
+        &__iframe {
+            border-radius: 10px;
+            width: 200px;
         }
     }
+}
 
-    &__item:hover {
+/*KONTAKT*/
+.contact {
+    i {
+        color: $main_color;
+        font-size: 60px;
+        transition: all .4s;
+    }
+
+
+    i:hover {
         color: $main_color;
         transform: scale(1.3)
     }
 
-    &__link {
-        color: $white_color;
+    i:hover + p {
+        transform: translateY(20px);
     }
-}
 
+    p {
+        color: $black_color;
+        padding-top: 7px;
+        transition: transform .4s;
+    }
+
+}
 
 /*MEDIA QUERIES*/
 @media(min-width: 375px) {
@@ -383,7 +367,7 @@ body {
         }
     }
 
-    /*CONTACT*/ 
+    /*CONTACT*/
     .contact {
         &__img {
             background-image: url('../img/contact/contact_big.jpeg');
