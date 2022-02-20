@@ -10,6 +10,7 @@
 /*COMMON CLASSES*/
 body {
     font-family: 'Nunito', sans-serif;
+    background-color: $background_color;
 }
 
 .gradient {
@@ -46,6 +47,25 @@ body {
     right: -8px;
     border-bottom: 3px solid $main_color;
     border-right: 3px solid $main_color;
+}
+
+.white-block {
+    position: absolute;
+    height: 40px;
+    width: 60%;
+    background-color: $background_color;
+
+    &-left {
+        bottom: 0;
+        left: -50px;
+        transform: skew(45deg);
+    }
+
+    &-right {
+        top : 0;
+        right: -50px;
+        transform: skew(45deg);
+    }
 }
 
 /*NAVBAR*/
@@ -93,7 +113,7 @@ body {
     }
 
     &__text {
-        position: absolute;
+        position: absolute; 
         left: 50%;
         top: 50%;
         transform: translate(-50%);
@@ -120,6 +140,7 @@ body {
 /*MAIN*/
 /*ABOUT US*/
 .about-us {
+    overflow: hidden;
     &__img {
         border-radius: 10px;
         width: 200px;
@@ -136,6 +157,9 @@ body {
 }
 
 .about-us-two {
+    position: relative;
+    overflow: hidden;
+    
     &__cards {
         display: flex;
         justify-content: space-evenly;
@@ -198,6 +222,7 @@ body {
 
 /*WHYUS*/
 .whyus {
+    overflow: hidden;
     &__column {
         margin-bottom: 20px;
     }
@@ -217,6 +242,8 @@ body {
 
 /*SWIMMING STYLES*/
 .styles {
+    position: relative;
+    overflow: hidden;
 
     /*MOVIES*/
     &__movies {
@@ -234,7 +261,6 @@ body {
         font-size: 60px;
         transition: all .4s;
     }
-
 
     i:hover {
         color: $main_color;
