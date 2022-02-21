@@ -19,10 +19,10 @@
   <script src="https://kit.fontawesome.com/8f23681658.js" crossorigin="anonymous"></script>
 </head>
 
-<body>
+<body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="96">
 
   <!--NAVBAR-->
-  <nav class="navbar-expand-lg navbar-liht position-fixed top-0 w-100 navbar">
+  <nav id="navbar" class="navbar-expand-lg navbar-liht position-fixed top-0 w-100 navbar">
     <div class="container">
       <a href="#"><img class="navbar__img" src="./static/img/navigation/logo.webp" alt=""></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
@@ -31,9 +31,9 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav ms-auto">
-          <a class="nav-link active navbar__a" aria-current="page" href="#about-us">o nas</a>
-          <a class="nav-link navbar__a" href="#">aktualności</a>
-          <a class="nav-link navbar__a" href="#">galeria</a>
+          <a class="nav-link navbar__a" href="#about-us">o nas</a>
+          <a class="nav-link navbar__a" href="/templates/news.html">aktualności</a>
+          <a class="nav-link navbar__a" href="/templates/gallery.html">galeria</a>
           <a class="nav-link navbar__a" href="#">dokumenty</a>
           <a class="nav-link navbar__a" href="#contact">kontakt</a>
         </div>
@@ -46,7 +46,7 @@
     <div class="header__img">
       <div class="header__shadow"></div>
       <div class="header__text">
-        <h1 class="header__text__h1">Happy<span class="header__text__h1__span">Swim</span></h1>
+        <h1 class="header__h1">Happy<span class="header__span">Swim</span></h1>
         <p class="text-center">Dołącz do nas już dziś!</p>
       </div>
       <div class="white-block white-block-left"></div>
@@ -145,7 +145,7 @@
     </section>
 
     <!--SWIMMING STYLES-->
-    <section class="py-4 styles gradient">
+    <section id="styles" class="py-4 styles gradient">
       <div class="white-block white-block-right"></div>
       <div class="container py-2 styles__movies">
         <div class="d-flex pt-4 justify-content-center align-items-center pb-2">
@@ -220,6 +220,8 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
   </script>
+  <!--MY SCRIPTS-->
+  <script src="./static/js/main.js"></script>
 </body>
 
 </html>
