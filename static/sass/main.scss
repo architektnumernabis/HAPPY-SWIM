@@ -4,18 +4,15 @@
 /*COLORS*/
 @import 'colors.scss';
 
-/*WHITE-BACKGROUND*/
-@import 'white-background.scss';
-
 /*COMMON CLASSES*/
 html {
     scroll-padding-top: 76px;
 }
 
 body {
+    font-family: 'Caveat', cursive;
     font-family: 'Nunito', sans-serif;
     background-color: $background_color;
-    position: relative;
 }
 
 .gradient {
@@ -37,7 +34,6 @@ body {
     width: 20px;
     height: 20px;
     border-radius: 5px;
-
 }
 
 .h2::before {
@@ -71,6 +67,11 @@ body {
         right: -50px;
         transform: skew(45deg);
     }
+}
+
+.white-background {
+    background-image: url('../img/Wave.svg');
+    background-size: cover;
 }
 
 /*NAVBAR*/
@@ -129,7 +130,8 @@ body {
         color: $white_color;
 
         p {
-            font-size: 13px;
+            font-size: 16px;
+            font-family: 'Caveat', cursive;
         }
     }
 
@@ -150,6 +152,10 @@ body {
 /*ABOUT US*/
 .about-us {
     overflow: hidden;
+
+    .container {
+        padding: 0;
+    }
 
     &__img {
         border-radius: 10px;
@@ -241,12 +247,14 @@ body {
     &__icon {
         color: $white_color;
         text-shadow: 0 0 5px $black_color;
-        font-size: 50px;
+        font-size: 60px;
 
         &__text {
             margin-top: 15px;
             text-transform: uppercase;
-            font-size: 13px;
+            font-size: 15px;
+            font-family: 'Caveat', cursive;
+            font-weight: 500;
         }
     }
 }
@@ -286,6 +294,9 @@ body {
         color: $black_color;
         padding-top: 7px;
         transition: transform .4s;
+        font-family: 'Caveat', cursive;
+        font-weight: 500;
+        font-size: 20px;
     }
 
 }
@@ -324,6 +335,7 @@ body {
             right: 10px;
             bottom: 0;
             color: $white_color;
+            font-family: 'Caveat', cursive;
         }
     }
 }
@@ -334,6 +346,7 @@ body {
 
     img {
         width: 200px;
+        max-height: 169px;
         margin: 20px 30px;
         border-radius: 8px;
         transition: transform .4s;
@@ -365,7 +378,7 @@ body {
         }
 
         p {
-            font-size: 18px;
+            font-size: 20px;
         }
     }
 
@@ -406,6 +419,10 @@ body {
         &__img {
             height: 500px;
         }
+
+        p {
+            font-size: 25px;
+        }
     }
 
     /*MAIN*/
@@ -413,6 +430,10 @@ body {
     .about-us {
         &__img {
             width: 500px;
+        }
+
+        &__p {
+            font-size: 18px;
         }
     }
 
@@ -441,10 +462,6 @@ body {
         &__h1 {
             font-size: 60px;
         }
-
-        p {
-            font-size: 20px;
-        }
     }
 
     /*ABOUT US*/
@@ -463,6 +480,10 @@ body {
     .about-us {
         &__img {
             width: 500px;
+        }
+
+        &__p {
+            font-size: 20px;
         }
     }
 
@@ -485,8 +506,10 @@ body {
     }
 
     /*NEWS*/
-    .container {
-        padding: 0 60px;
+    .main-news {
+        .container {
+            padding: 0 60px;
+        }
     }
 }
 
@@ -514,7 +537,14 @@ body {
         }
 
         p {
-            font-size: 22px;
+            font-size: 35px;
+        }
+    }
+
+    /*ABOUT-US*/
+    .about-us {
+        &__p {
+            font-size: 25px;
         }
     }
 
