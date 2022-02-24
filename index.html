@@ -16,7 +16,7 @@
     href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500&family=Nunito:ital,wght@0,400;0,600;0,700;1,400&display=swap"
     rel="stylesheet">
   <!--AOS-->
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"/>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   <!--MY STYLES-->
   <link rel="stylesheet" href="./static/css/main.css">
   <!--FONT AWESOME-->
@@ -35,11 +35,11 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav ms-auto">
-          <a class="nav-link navbar__a" href="#about-us">o nas</a>
-          <a class="nav-link navbar__a" href="./templates/news.html">aktualności</a>
-          <a class="nav-link navbar__a" href="./templates/gallery.html">galeria</a>
-          <a class="nav-link navbar__a" href="#">dokumenty</a>
-          <a class="nav-link navbar__a" href="#contact">kontakt</a>
+          <a class="nav-link" href="#about-us">o nas</a>
+          <a class="nav-link" href="./templates/news.html">aktualności</a>
+          <a class="nav-link" href="./templates/gallery.html">galeria</a>
+          <a class="nav-link" href="#">dokumenty</a>
+          <a class="nav-link" href="#contact">kontakt</a>
         </div>
       </div>
     </div>
@@ -121,27 +121,27 @@
           <h2 class="text-uppercase h2">dlaczego warto nas wybrać?</h2>
         </div>
         <div class="row text-center py-5">
-          <div class="col-sm-6 col-lg-2 whyus__column" data-aos="flip-left" data-aos-duration="500" data-aos-delay="300">
+          <div class="col-sm-6 col-lg-2 whyus__column heartbeat heartbeat">
             <i class="fas fa-child whyus__icon"></i>
             <p class="whyus__icon__text">prowadzimy zajęcia dla dzieci...</p>
           </div>
-          <div class="col-sm-6 col-lg-2 whyus__column" data-aos="flip-left" data-aos-duration="500" data-aos-delay="400">
+          <div class="col-sm-6 col-lg-2 whyus__column heartbeat">
             <i class="fas fa-smile-beam whyus__icon"></i>
             <p class="whyus__icon__text">...które wychodzą od nas uśmiechnięte! </p>
           </div>
-          <div class="col-sm-6 col-lg-2 whyus__column" data-aos="flip-left" data-aos-duration="500" data-aos-delay="500">
+          <div class="col-sm-6 col-lg-2 whyus__column heartbeat">
             <i class="fas fa-certificate whyus__icon"></i>
             <p class="whyus__icon__text">jesteśmy certyfikowanymi trenerami</p>
           </div>
-          <div class="col-sm-6 col-lg-2 whyus__column" data-aos="flip-left" data-aos-duration="500" data-aos-delay="600">
+          <div class="col-sm-6 col-lg-2 whyus__column heartbeat">
             <i class="fas fa-chart-line whyus__icon"></i>
             <p class="whyus__icon__text">stawiamy na nieustanny rozwój</p>
           </div>
-          <div class="col-sm-6 col-lg-2 whyus__column" data-aos="flip-left" data-aos-duration="500" data-aos-delay="700">
+          <div class="col-sm-6 col-lg-2 whyus__column heartbeat">
             <i class="far fa-handshake whyus__icon"></i>
             <p class="whyus__icon__text">mamy wielu zadowolonych klientów</p>
           </div>
-          <div class="col-sm-6 col-lg-2 whyus__column" data-aos="flip-left" data-aos-duration="500" data-aos-delay="800">
+          <div class="col-sm-6 col-lg-2 whyus__column heartbeat">
             <i class="fas fa-swimmer whyus__icon"></i>
             <p class="whyus__icon__text">nauczymy pływać każdego!</p>
           </div>
@@ -195,7 +195,7 @@
         <div class="row text-center py-5">
           <div class="col-sm-6 col-lg-3 py-3">
             <i class="fas fa-phone-square-alt"></i>
-            <p class="">693 361 952<br>607 960 731</p>
+            <p>693 361 952<br>607 960 731</p>
           </div>
           <div class="col-sm-6 col-lg-3 py-3">
             <a class="text-decoration-none" href="https://www.facebook.com/Happy-Swim-Szko%C5%82a-P%C5%82ywania-Doroty-Jarnot-744226262434107" target="blank"><i class="fab fa-facebook"></i>
@@ -211,12 +211,32 @@
           </div>
         </div>
       </div>
+   
+
+      <div class="container mail">
+        <div class="row text-center">
+          <div class="col-lg-6">
+            <iframe class="map"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2562.6606929070113!2d19.250010415636996!3d50.03645347942042!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47169504c369dea9%3A0xc3abbc948b10c8f8!2sP%C5%82ywalnia%20kryta!5e0!3m2!1spl!2spl!4v1645732210105!5m2!1spl!2spl"
+              width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+          </div>
+          <div class="col-lg-6">
+            <form action="">
+              <h3>wyślij do nas maila!</h3>
+              <input type="text" id="name" placeholder="Twoje imię" required>
+              <input type="email" id="email" placeholder="Twój e-mail" required>
+              <textarea id="message" rows="10" placeholder="Wpisz treść Twojej wiadmości"></textarea>
+              <button type="submit" class="submit">Wyślij</button>
+            </form>
+          </div>
+        </div>
+      </div>
     </section>
   </main>
 
   <!--FOOTER-->
-  <footer class="text-light py-4 text-center gradient">
-    <p class="mb-0">footer</p>
+  <footer class="text-dark py-4 text-center gradient">
+    <p class="mb-0">&copy; 2022 | <a href="#">Happy Swim</a></p>
   </footer>
 
   <!--BOOTSTRAP-->
@@ -226,6 +246,9 @@
   <!--AOS-->
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="./static/js/aos_init.js"></script>
+  <!--SMTP JS SCRIPTS FOR E-MAIL SENDING-->
+  <script src="https://smtpjs.com/v3/smtp.js">
+  </script>
   <!--MY SCRIPTS-->
   <script src="./static/js/main.js"></script>
 </body>

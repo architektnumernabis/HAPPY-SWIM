@@ -4,6 +4,9 @@
 /*COLORS*/
 @import 'colors.scss';
 
+/*ANIMATIONS*/ 
+@import './animations';
+
 /*COMMON CLASSES*/
 html {
     scroll-padding-top: 76px;
@@ -13,6 +16,7 @@ body {
     font-family: 'Caveat', cursive;
     font-family: 'Nunito', sans-serif;
     background-color: $background_color;
+    position: relative;
 }
 
 .gradient {
@@ -84,14 +88,14 @@ body {
         height: 50px;
     }
 
-    &__a {
+    a {
         font-weight: 600;
         text-transform: uppercase;
         color: $black_color;
         transition: color .4s;
     }
 
-    &__a:hover {
+    a:hover {
         color: $main_color;
     }
 
@@ -274,7 +278,7 @@ body {
     }
 }
 
-/*KONTAKT*/
+/*CONTACT*/
 .contact {
     i {
         color: $main_color;
@@ -293,11 +297,47 @@ body {
 
     p {
         color: $black_color;
+        text-decoration: none;
         padding-top: 7px;
         transition: transform .4s;
         font-family: 'Caveat', cursive;
         font-weight: 500;
         font-size: 20px;
+    }
+}
+
+/*MAIL*/ 
+.mail {
+    .map {
+        max-width: 250px;
+        padding: 10px;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        margin: 10px;
+
+        h3 {
+            text-transform: uppercase;
+        }
+
+        input, textarea, button {
+            padding: 5px;
+            border-radius: 8px;
+            border: none;
+            margin: 10px;
+        }
+
+        textarea {
+            max-height: 200px;  
+        }
+
+        .submit {
+            background-color: $main_color;
+            width: 200px;
+            margin: 15px auto;
+        }
     }
 
 }
@@ -358,6 +398,24 @@ body {
     }
 }
 
+/*FOOTER*/ 
+footer {
+    p {
+        font-family: 'Caveat', cursive;
+        font-size: 20px;
+    }
+    
+    a {
+        transition: color .3s;
+        text-decoration: none;
+        color: $black_color;
+    }
+
+    a:hover {
+        color: $main_color;
+    }
+}
+
 /*MEDIA QUERIES*/
 @media(min-width: 375px) {
 
@@ -403,14 +461,27 @@ body {
         }
     }
 
+    /*MAIL*/
+    .mail {
+        .map {
+            max-width: 350px;
+        }
+    }
+        
+
+    /*FOOTER*/ 
+    footer {
+        p {
+            font-size: 25px;
+        }
+    }
+
     /*GALLERY*/
     .gallery {
         img {
             width: 300px;
         }
-
     }
-
 }
 
 @media(min-width: 576px) {
@@ -449,6 +520,13 @@ body {
             }
         }
     }
+
+    /*MAIL*/
+    .mail {
+        .map {
+            max-width: 450px;
+        }
+    }
 }
 
 
@@ -469,6 +547,13 @@ body {
     .about-us {
         &__img {
             width: 370px;
+        }
+    }
+
+     /*MAIL*/
+     .mail {
+        .map {
+            max-width: 650px;
         }
     }
 }
@@ -503,6 +588,13 @@ body {
     .contact {
         &__img {
             background-image: url('../img/contact/contact_big.jpeg');
+        }
+    }
+
+      /*MAIL*/
+      .mail {
+        .map {
+            max-width: 500px;
         }
     }
 
