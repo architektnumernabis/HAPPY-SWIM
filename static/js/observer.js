@@ -1,7 +1,11 @@
 const aboutUs = document.querySelectorAll('.about-us-element');
-const options = {
+const icons = document.querySelectorAll('.whyus__column');
+const optionsAboutUs = {
     threshold: 0.5
 };
+const optionsIcons = {
+    threshold: 0.3
+}
 
 const aboutUsObserver = new IntersectionObserver(function (entries, aboutUsObserver) {
     entries.forEach(entry => {
@@ -12,8 +16,23 @@ const aboutUsObserver = new IntersectionObserver(function (entries, aboutUsObser
             aboutUsObserver.unobserve(entry.target);
         }
     })
-}, options);
+}, optionsAboutUs);
 
 aboutUs.forEach(element => {
     aboutUsObserver.observe(element);
+});
+
+const iconsObserver = new IntersectionObserver(function (entries, iconsObserver) {
+    entries.forEach(entry => {
+        if(!entry.isIntersecting) {
+            return;
+        } else {
+            entry.target.classList.add('flip-left');
+            aboutUsObserver.unobserve(entry.target);
+        }
+    })
+}, optionsIcons);
+
+icons.forEach(element => {
+    iconsObserver.observe(element);
 });

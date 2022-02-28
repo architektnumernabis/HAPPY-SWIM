@@ -1,14 +1,84 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Happy Swim - dokumenty</title>
+    <!--BOOTSTRAP-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!--GOOGLE FONTS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500&family=Nunito:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <!--MY STYLES-->
+    <link rel="stylesheet" href="../static/css/main.css">
+    <!--FONT AWESOME-->
+    <script src="https://kit.fontawesome.com/8f23681658.js" crossorigin="anonymous"></script>
 </head>
-<body>
-    
 
-    
+<body>
+
+    <!--NAVBAR-->
+    <nav id="navbar" class="navbar-expand-lg navbar-liht position-sticky top-0 w-100 navbar">
+        <div class="container">
+            <a href="../index.html"><img class="navbar__img" src="../static/img/navigation/logo.webp" alt=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-bars navbar__bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ms-auto">
+                    <a class="nav-link" href="../index.html#about-us">o nas</a>
+                    <a class="nav-link" href="./news.html">aktualności</a>
+                    <a class="nav-link" href="./gallery.html">galeria</a>
+                    <a class="nav-link active" href="#documents">dokumenty</a>
+                    <a class="nav-link" href="../index.html#contact">kontakt</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!--MAIN-->
+    <!--DOCUMENTS-->
+    <main id="documents" class="documents white-background">
+        <div class="container">
+            <div class="documents__text py-4">
+                <p>Wszystkich uczestników nauki pływania prosimy o zapoznanie się z regulaminem Szkoły Pływania Happy
+                    Swim Dorota Jarnot. Każdy podopieczny, który akceptuje regulamin naszej szkoły, zobowiązany jest do
+                    pobrania zamieszczonych poniżej dokumentów, wydrukowania ich we własnym zakresie i dostarczenia
+                    podpisanych do instruktora pływania.</p>
+            </div>
+            <div class="documents__wrapper">
+                <a href="../static/pdfs/Regulamin-i-zgody-nauki-plywania-ksz0co2t.pdf" target="blank"><i class="fas fa-file-pdf"></i></a>
+                <p>Regulamin i zgody</p>
+            </div>
+            <div class="documents__wrapper">
+                <a href="../static/pdfs/Regulamin-umowa-i-zgoda-ky2r670o.pdf" target="blank"><i class="fas fa-file-pdf"></i></a>
+                <p>Półkolonia 2022 - regulamin i zgody</p>
+            </div>
+            <div class="documents__wrapper">
+                <a href="../static/pdfs/Karta-Kwalifikacyjna-Prawidlowa-ky4mo05j.pdf" target="blank"><i class="fas fa-file-pdf"></i></a>
+                <p>Półkolonia 2022 - karta kwalifikacyjna</p>
+            </div>
+        </div>
+    </main>
+
+    <!--FOOTER-->
+    <footer class="text-dark py-4 text-center gradient">
+        <p class="mb-0">&copy; 2022 | <a href="../index.html">Happy Swim</a></p>
+    </footer>
+
+    <!--BOOTSTRAP-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
+    <!--MY SCRIPTS-->
+    <script src="../static/js/main.js"></script>
 </body>
+
 </html>
