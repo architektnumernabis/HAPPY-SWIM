@@ -37,4 +37,33 @@
       animation-timing-function: ease-out;
     }
   }
+
+  .flip-left {
+    animation: flip-left 1.5s;
+    animation-fill-mode: forwards;
+  }
+
+  @keyframes flip-left {
+    0% {
+      transform: rotateY(180deg);
+      opacity: 0;
+    }
+
+    25% {
+      opacity: 0;
+    }
+
+    50% {
+      opacity: 0.5;
+    }
+
+    75%{ 
+      opacity: 0.75;
+    }
+
+    100% {
+      transform: rotateY(360deg);
+      opacity: 1;
+    }
+  }
   

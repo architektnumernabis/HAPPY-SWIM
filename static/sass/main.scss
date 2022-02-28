@@ -9,7 +9,7 @@
 
 /*COMMON CLASSES*/
 html {
-    scroll-padding-top: 76px;
+    scroll-padding-top: 72px;
 }
 
 body {
@@ -158,6 +158,10 @@ body {
 .about-us {
     overflow: hidden;
 
+    .about-us-element {
+        opacity: 0;
+    }
+
     .container {
         padding: 0;
     }
@@ -200,6 +204,16 @@ body {
         margin: 20px;
         box-shadow: 5px 5px 10px rgba(0, 0, 0, .7);
         cursor: crosshair;
+
+        i {
+            position: absolute;
+            color: $white_color;
+            font-size: 25px;
+            top: 10px;
+            right: 10px;
+            text-shadow: 2px 2px 10px rgba(0,0,0,.7);
+            z-index: 1;
+        }
 
         &--dorothy {
             background-image: url('../img/aboutus/dorotka.png');
@@ -296,8 +310,8 @@ body {
     }
 
     p {
-        color: $black_color;
-        text-decoration: none;
+        color: $black_color !important;
+        text-decoration: none !important;
         padding-top: 7px;
         transition: transform .4s;
         font-family: 'Caveat', cursive;
@@ -375,8 +389,8 @@ body {
             position: absolute;
             right: 10px;
             bottom: 0;
-            color: $white_color;
             font-family: 'Caveat', cursive;
+            font-size: 25px;
         }
     }
 }
@@ -406,13 +420,12 @@ footer {
     }
     
     a {
-        transition: color .3s;
         text-decoration: none;
         color: $black_color;
     }
 
     a:hover {
-        color: $main_color;
+        color: $black_color;
     }
 }
 
@@ -609,7 +622,7 @@ footer {
 
 @media(min-width: 1200px) {
     html {
-        scroll-padding-top: 96px;
+        scroll-padding-top: 95px;
     }
 
     /*NAVBAR*/

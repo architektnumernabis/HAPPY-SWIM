@@ -26,9 +26,9 @@
 <body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="96">
 
   <!--NAVBAR-->
-  <nav id="navbar" class="navbar-expand-lg navbar-liht position-fixed top-0 w-100 navbar">
+  <nav id="navbar" class="navbar-expand-lg position-fixed top-0 w-100 navbar">
     <div class="container">
-      <a href="#"><img class="navbar__img" src="./static/img/navigation/logo.webp" alt=""></a>
+      <a href="#"><img class="navbar__img" src="./static/img/navigation/logo.webp" alt=""><span class="d-none">logo</span></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
         aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <i class="fas fa-bars navbar__bars"></i>
@@ -36,8 +36,8 @@
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav ms-auto">
           <a class="nav-link" href="#about-us">o nas</a>
-          <a class="nav-link" href="./templates/news.html">aktualności</a>
-          <a class="nav-link" href="./templates/gallery.html">galeria</a>
+          <a class="nav-link" href="./templates/news.html#news">aktualności</a>
+          <a class="nav-link" href="./templates/gallery.html#gallery">galeria</a>
           <a class="nav-link" href="#">dokumenty</a>
           <a class="nav-link" href="#contact">kontakt</a>
         </div>
@@ -67,10 +67,10 @@
           <h2 class="h2">o nas</h2>
         </div>
         <div class="row">
-          <div class="col-md-6 py-3 text-center" data-aos="flip-left">
-            <img class="about-us__img" src="./static/img/aboutus/aboutus.jpeg" alt="">
+          <div class="col-md-6 py-3 text-center about-us-element">
+            <img class="about-us__img" src="./static/img/aboutus/aboutus.jpeg" alt="Zdjęcie przedstawia Dorotę Jarnot oraz Ewelinę Pałkę, instruktorki pływania">
           </div>
-          <div class="col-md-6 py-3 text-center d-flex flex-column justify-content-center px-5" data-aos="flip-right">
+          <div class="col-md-6 py-3 text-center d-flex flex-column justify-content-center px-5 about-us-element">
             <p class="about-us__p">Miłość do sportu i pasja do pływania. Zapraszam Cię do mojej szkoły, w której
               nauczymy
               Cię pływać, bądź
@@ -92,18 +92,22 @@
         </div>
         <div class="row text-center py-3 about-us-two__cards">
           <div class="col-md-6 col-lg-4 about-us-two__card-one about-us-two__card-one--dorothy">
+            <i class="far fa-question-circle"></i>
             <div class="about-us-two__card-one__text">
               <h3>Dorota Jarnot</h3>
               <p>założycielka</p>
             </div>
           </div>
+          
           <div class="col-lg-4 order-1 about-us-two__card-one about-us-two__card-one--ola">
+            <i class="far fa-question-circle"></i>
             <div class="about-us-two__card-one__text">
               <h3>Aleksandra Klisiak</h3>
               <p>instruktorka</p>
             </div>
           </div>
           <div class="col-md-6 col-lg-4 about-us-two__card-one about-us-two__card-one--eve">
+            <i class="far fa-question-circle"></i>
             <div class="about-us-two__card-one__text">
               <h3>Ewelina Pałka</h3>
               <p>instruktorka</p>
@@ -249,8 +253,10 @@
   <!--SMTP JS SCRIPTS FOR E-MAIL SENDING-->
   <script src="https://smtpjs.com/v3/smtp.js">
   </script>
+
   <!--MY SCRIPTS-->
   <script src="./static/js/main.js"></script>
+  <script src="./static/js/observer.js"></script>
 </body>
 
 </html>
