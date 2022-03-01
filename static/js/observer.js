@@ -4,7 +4,7 @@ const optionsAboutUs = {
     threshold: 0.5
 };
 const optionsIcons = {
-    threshold: 0.3
+    threshold: 0.9
 }
 
 const aboutUsObserver = new IntersectionObserver(function (entries, aboutUsObserver) {
